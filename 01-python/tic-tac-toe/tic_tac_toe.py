@@ -80,15 +80,6 @@ class TicTacToeGame():
         x+=1
         print(char,end=end)
 
-    #print("\n\t", self.board[0], "|", self.board[1], "|", self.board[2])
-    #print("\n\t", self.board[3], "|", self.board[4], "|", self.board[5])
-    #print("\n\t", self.board[6], "|", self.board[7], "|", self.board[8], "\n")
-
-   
-
-
-
-
   def print(self):
     print("Player turn:" if self.turn == _MACHINE else "Machine turn:")
     print(self.format_board())
