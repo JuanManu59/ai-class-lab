@@ -64,7 +64,8 @@ class TicTacToeGame():
     # The result of this function should be that self.board now has one more random cell occupied
     verificador = True
     while verificador:
-      r = random.randrange(10)
+      r = random.randrange(9)
+      #print(r)
       if self.board[r] is None:
         self.board[r] = _MACHINE_SYMBOL
         verificador = False
@@ -79,6 +80,11 @@ class TicTacToeGame():
         if i in (_MACHINE_SYMBOL,_PLAYER_SYMBOL): char=i
         x+=1
         print(char,end=end)
+
+        #vacio = " "
+    #print("\n", vacio if self.board[0] is None else self.board[0], "|", vacio if self.board[0] is None else self.board[1], "|", vacio if self.board[0] is None else self.board[2])
+    #print(vacio if self.board[0] is None else self.board[3], "|", vacio if self.board[0] is None else self.board[4], "|", vacio if self.board[0] is None else self.board[5])
+    #print(vacio if self.board[0] is None else self.board[6], "|", vacio if self.board[0] is None else self.board[7], "|", vacio if self.board[0] is None else self.board[8], "\n")
 
   def print(self):
     print("Player turn:" if self.turn == _MACHINE else "Machine turn:")
